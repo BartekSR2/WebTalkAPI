@@ -1,4 +1,6 @@
-﻿namespace WebTalkApi.Middleware
+﻿using WebTalkApi.Exceptions;
+
+namespace WebTalkApi.Middleware
 {
     public class ErrorHandlingMiddleware : IMiddleware
     {
@@ -6,7 +8,12 @@
         {
             try
             {
-                next.Invoke(context);
+                await next.Invoke(context);
+            }
+            catch(BadRequestException badRequest)
+            {
+                context.Response.StatusCode = 400;
+                await context.Response.WriteAsync(badRequest.Message);
             }
             catch(Exception e)
             {

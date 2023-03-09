@@ -1,5 +1,10 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 using WebTalkApi.Entities;
+using WebTalkApi.Exceptions;
 using WebTalkApi.Models;
 
 namespace WebTalkApi.Services
@@ -7,20 +12,60 @@ namespace WebTalkApi.Services
     public interface IAccountService
     {
         public void RegisterUser(RegisterUserDto registerDto);
-        public void LoginUser(LoginUserDto  loginDto);
+        public string LoginUser(LoginUserDto  loginDto);
     }
     public class AccountService : IAccountService
     {
         private readonly WebTalkDbContext _dbContext;
         private readonly IPasswordHasher<User> _passwordHasher;
-        public AccountService(WebTalkDbContext dbContext,IPasswordHasher<User> passwordHasher)
+        private readonly AuthenticationSettings _authenticationSettings;
+
+        public AccountService(WebTalkDbContext dbContext,IPasswordHasher<User> passwordHasher, AuthenticationSettings authenticationSettings)
         {
             _dbContext = dbContext;
             _passwordHasher = passwordHasher;
+            _authenticationSettings = authenticationSettings;
         }
-        public void LoginUser(LoginUserDto loginDto)
+        public string LoginUser(LoginUserDto loginDto)
         {
-            throw new NotImplementedException();
+            var user = _dbContext.Users.FirstOrDefault(u => u.Email == loginDto.Email);
+
+            if(user is null)
+            {
+                throw new BadRequestException("Incorrect Email or Password");
+            }
+
+            if(_passwordHasher.VerifyHashedPassword(user, user.HashedPassword, loginDto.Password)
+                == PasswordVerificationResult.Failed)
+            {
+                throw new BadRequestException("Incorrect Email or Password");
+            }
+
+            var claims = new List<Claim>()
+            {
+                new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+                new Claim(ClaimTypes.Email, user.Email),
+                new Claim(ClaimTypes.Name, user.Name),
+                new Claim(ClaimTypes.Surname, string.IsNullOrEmpty(user.Surname) ? "x": user.Surname ),
+
+            };
+
+            var jwtKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_authenticationSettings.JwtKey));
+            var cred = new SigningCredentials(jwtKey, SecurityAlgorithms.HmacSha256);
+
+            var expirationDate = DateTime.Now.AddDays(_authenticationSettings.ExpireDays);
+
+
+            var jwtToken = new JwtSecurityToken(_authenticationSettings.JwtIssuer,
+                _authenticationSettings.JwtIssuer,
+                claims,
+                expires: expirationDate,
+                signingCredentials: cred);
+
+            var tokenHandler = new JwtSecurityTokenHandler();
+
+            return tokenHandler.WriteToken(jwtToken);
+
         }
 
         public void RegisterUser(RegisterUserDto registerDto)

@@ -51,6 +51,7 @@ namespace WebTalkApi
             builder.Services.AddScoped<IValidator<RegisterUserDto>, RegisterUserDtoValidator>();
             builder.Services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
             builder.Services.AddScoped<ErrorHandlingMiddleware>();
+            builder.Services.AddSingleton(authenticationSettings);
                //database services
             builder.Services.AddScoped<IAccountService, AccountService>();
             builder.Services.AddScoped<IChatService, ChatService>();

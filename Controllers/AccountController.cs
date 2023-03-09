@@ -27,9 +27,9 @@ namespace WebTalkApi.Controllers
         [HttpPost("Login")]
         public ActionResult Login([FromBody] LoginUserDto loginDto)
         {
+            string token = _accountService.LoginUser(loginDto);
 
-
-            return Ok();
+            return Ok(token);
         }
     }
 }
