@@ -1,7 +1,9 @@
 using FluentValidation;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.IdentityModel.Tokens;
 using System.Reflection;
+using System.Text;
 using WebTalkApi.Entities;
 using WebTalkApi.Middleware;
 using WebTalkApi.Models;
@@ -15,7 +17,31 @@ namespace WebTalkApi
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-            
+
+            //authentication config
+            var authenticationSettings = new AuthenticationSettings();
+            builder.Configuration.GetSection("Authentication").Bind(authenticationSettings);
+
+            builder.Services.AddAuthentication(option =>
+            {
+                option.DefaultAuthenticateScheme = "Bearer";
+                option.DefaultScheme = "Bearer";
+                option.DefaultChallengeScheme = "Bearer";
+
+            }).AddJwtBearer(conf =>
+            {
+                conf.RequireHttpsMetadata = false;
+                conf.SaveToken = true;
+                conf.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+                {
+                    ValidIssuer = authenticationSettings.JwtIssuer,
+                    ValidAudience = authenticationSettings.JwtIssuer,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(authenticationSettings.JwtKey))
+
+                };
+            });
+
+
             // Add services to the container.
             builder.Services.AddDbContext<WebTalkDbContext>();
             builder.Services.AddControllers();
@@ -25,7 +51,7 @@ namespace WebTalkApi
             builder.Services.AddScoped<IValidator<RegisterUserDto>, RegisterUserDtoValidator>();
             builder.Services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
             builder.Services.AddScoped<ErrorHandlingMiddleware>();
-               //data services
+               //database services
             builder.Services.AddScoped<IAccountService, AccountService>();
             builder.Services.AddScoped<IChatService, ChatService>();
 
@@ -50,7 +76,7 @@ namespace WebTalkApi
             app.UseMiddleware<ErrorHandlingMiddleware>();
             
             app.UseHttpsRedirection();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
 
