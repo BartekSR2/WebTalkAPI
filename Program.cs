@@ -9,7 +9,7 @@ using WebTalkApi.Middleware;
 using WebTalkApi.Models;
 using WebTalkApi.Services;
 using WebTalkApi.Validators;
-
+using NLog;
 namespace WebTalkApi
 {
     public class Program
@@ -17,7 +17,7 @@ namespace WebTalkApi
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-
+            
             //authentication config
             var authenticationSettings = new AuthenticationSettings();
             builder.Configuration.GetSection("Authentication").Bind(authenticationSettings);
@@ -72,7 +72,7 @@ namespace WebTalkApi
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-
+            
             //middleware
             app.UseMiddleware<ErrorHandlingMiddleware>();
             
