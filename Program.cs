@@ -60,6 +60,7 @@ namespace WebTalkApi
             builder.Services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
             builder.Services.AddScoped<ErrorHandlingMiddleware>();
             builder.Services.AddSingleton(authenticationSettings);
+            builder.Services.AddScoped<IJwtGenerator, JwtGenerator>();
                //database services
             builder.Services.AddScoped<IAccountService, AccountService>();
             builder.Services.AddScoped<IChatService, ChatService>();

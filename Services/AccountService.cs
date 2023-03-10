@@ -18,14 +18,14 @@ namespace WebTalkApi.Services
     {
         private readonly WebTalkDbContext _dbContext;
         private readonly IPasswordHasher<User> _passwordHasher;
-        private readonly AuthenticationSettings _authenticationSettings;
+        private readonly IJwtGenerator _jwtGenerator;
         private readonly ILogger<AccountService> _logger;
 
-        public AccountService(WebTalkDbContext dbContext,IPasswordHasher<User> passwordHasher, AuthenticationSettings authenticationSettings, ILogger<AccountService> logger)
+        public AccountService(WebTalkDbContext dbContext,IPasswordHasher<User> passwordHasher,IJwtGenerator jwtGenerator, ILogger<AccountService> logger)
         {
             _dbContext = dbContext;
             _passwordHasher = passwordHasher;
-            _authenticationSettings = authenticationSettings;
+            _jwtGenerator = jwtGenerator;
             _logger = logger;
         }
         public string LoginUser(LoginUserDto loginDto)
@@ -53,22 +53,10 @@ namespace WebTalkApi.Services
 
             };
 
-            var jwtKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_authenticationSettings.JwtKey));
-            var cred = new SigningCredentials(jwtKey, SecurityAlgorithms.HmacSha256);
-
-            var expirationDate = DateTime.Now.AddDays(_authenticationSettings.ExpireDays);
-
-
-            var jwtToken = new JwtSecurityToken(_authenticationSettings.JwtIssuer,
-                _authenticationSettings.JwtIssuer,
-                claims,
-                expires: expirationDate,
-                signingCredentials: cred);
-
-            var tokenHandler = new JwtSecurityTokenHandler();
+            var token = _jwtGenerator.GetJwtToken(claims);
 
             _logger.LogInformation($"User {user.Email} login succesfull");
-            return tokenHandler.WriteToken(jwtToken);
+            return token;
 
         }
 
