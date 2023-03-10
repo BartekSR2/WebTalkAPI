@@ -9,7 +9,7 @@ namespace WebTalkApi.Services
     {
         public string GetJwtToken(List<Claim> claims);
     }
-
+     
     public class JwtGenerator: IJwtGenerator
     {
         private readonly AuthenticationSettings _authenticationSettings;

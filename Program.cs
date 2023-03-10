@@ -61,6 +61,8 @@ namespace WebTalkApi
             builder.Services.AddScoped<ErrorHandlingMiddleware>();
             builder.Services.AddSingleton(authenticationSettings);
             builder.Services.AddScoped<IJwtGenerator, JwtGenerator>();
+            builder.Services.AddScoped<IUserContext, UserContext>();
+            builder.Services.AddHttpContextAccessor();
                //database services
             builder.Services.AddScoped<IAccountService, AccountService>();
             builder.Services.AddScoped<IChatService, ChatService>();

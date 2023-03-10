@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using WebTalkApi.Models;
 using WebTalkApi.Services;
 
@@ -6,6 +7,7 @@ namespace WebTalkApi.Controllers
 {
     [Route("api/chat")]
     [ApiController]
+    [Authorize]
     public class ChatController : ControllerBase
     {
         private readonly IChatService _chatService;
