@@ -10,6 +10,8 @@ using WebTalkApi.Models;
 using WebTalkApi.Services;
 using WebTalkApi.Validators;
 using NLog;
+using NLog.Web;
+
 namespace WebTalkApi
 {
     public class Program
@@ -17,7 +19,13 @@ namespace WebTalkApi
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            // logger
             
+            builder.Logging.ClearProviders();
+            builder.Logging.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Trace);
+            builder.Host.UseNLog();
+            
+
             //authentication config
             var authenticationSettings = new AuthenticationSettings();
             builder.Configuration.GetSection("Authentication").Bind(authenticationSettings);

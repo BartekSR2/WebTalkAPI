@@ -19,12 +19,14 @@ namespace WebTalkApi.Services
         private readonly WebTalkDbContext _dbContext;
         private readonly IPasswordHasher<User> _passwordHasher;
         private readonly AuthenticationSettings _authenticationSettings;
+        private readonly ILogger<AccountService> _logger;
 
-        public AccountService(WebTalkDbContext dbContext,IPasswordHasher<User> passwordHasher, AuthenticationSettings authenticationSettings)
+        public AccountService(WebTalkDbContext dbContext,IPasswordHasher<User> passwordHasher, AuthenticationSettings authenticationSettings, ILogger<AccountService> logger)
         {
             _dbContext = dbContext;
             _passwordHasher = passwordHasher;
             _authenticationSettings = authenticationSettings;
+            _logger = logger;
         }
         public string LoginUser(LoginUserDto loginDto)
         {
@@ -38,6 +40,7 @@ namespace WebTalkApi.Services
             if(_passwordHasher.VerifyHashedPassword(user, user.HashedPassword, loginDto.Password)
                 == PasswordVerificationResult.Failed)
             {
+                _logger.LogWarning($"User {user.Email} login failed. Bad password");
                 throw new BadRequestException("Incorrect Email or Password");
             }
 
@@ -64,6 +67,7 @@ namespace WebTalkApi.Services
 
             var tokenHandler = new JwtSecurityTokenHandler();
 
+            _logger.LogInformation($"User {user.Email} login succesfull");
             return tokenHandler.WriteToken(jwtToken);
 
         }
@@ -82,6 +86,7 @@ namespace WebTalkApi.Services
 
             _dbContext.Users.Add(newCreatedUser);
             _dbContext.SaveChanges();
+            _logger.LogInformation($"Create new user {newCreatedUser.Email}, {newCreatedUser.Name} {newCreatedUser.Surname}");
 
         }
     }
