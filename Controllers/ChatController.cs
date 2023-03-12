@@ -17,8 +17,9 @@ namespace WebTalkApi.Controllers
         }
 
         [HttpPost]
-        public ActionResult CreateChat([FromBody] AddChatDto chatDto)
+        public ActionResult AddChat([FromBody] AddChatDto chatDto)
         {
+            _chatService.CreateChat(chatDto);
             return NoContent();
         }
 
