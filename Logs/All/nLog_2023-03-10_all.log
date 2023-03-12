@@ -1325,3 +1325,502 @@
 2023-03-10 17:12:57.0294||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMP1G7TP804N" sending FIN because: "The client closed the connection." 
 2023-03-10 17:12:57.0294||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMP1G7TP804N" disconnecting. 
 2023-03-10 17:12:57.0294||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMP1G7TP804N" stopped. 
+2023-03-10 17:47:42.3950||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2023-03-10 17:47:42.4417||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2023-03-10 17:47:42.4417||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Bartek\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-03-10 17:47:42.4417||DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\Bartek\AppData\Local\ASP.NET\DataProtection-Keys\key-13a8bbc5-360e-4057-b820-83190216f975.xml'. 
+2023-03-10 17:47:42.4536||DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\Bartek\AppData\Local\ASP.NET\DataProtection-Keys\key-89a2452d-c657-4a66-8e30-841d1e9a314a.xml'. 
+2023-03-10 17:47:42.4536||DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {13a8bbc5-360e-4057-b820-83190216f975}. 
+2023-03-10 17:47:42.4536||DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {89a2452d-c657-4a66-8e30-841d1e9a314a}. 
+2023-03-10 17:47:42.4536||DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {89a2452d-c657-4a66-8e30-841d1e9a314a} with expiration date 2023-05-27 01:48:29Z as default key. 
+2023-03-10 17:47:42.4536||DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2023-03-10 17:47:42.4536||DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI. 
+2023-03-10 17:47:42.4536||DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2023-03-10 17:47:42.4712||DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC. 
+2023-03-10 17:47:42.4712||DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC. 
+2023-03-10 17:47:42.4712||DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {89a2452d-c657-4a66-8e30-841d1e9a314a} as the default key. 
+2023-03-10 17:47:42.4712||DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {89a2452d-c657-4a66-8e30-841d1e9a314a} was loaded during application startup. 
+2023-03-10 17:47:42.5150||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: 4BCFA43E44D105236FCFDDACAEC16727710D9148) 
+2023-03-10 17:47:42.5376||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7027 
+2023-03-10 17:47:42.5376||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5027 
+2023-03-10 17:47:42.5376||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly WebTalkApi 
+2023-03-10 17:47:42.5376||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2023-03-10 17:47:42.5376||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2023-03-10 17:47:42.5376||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-03-10 17:47:42.5376||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-03-10 17:47:42.5376||INFO|Microsoft.Hosting.Lifetime|Content root path: Y:\CsProjects\WebTalkApi\ 
+2023-03-10 17:47:42.5376||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2023-03-10 17:47:42.9276||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMP1GSLGENUK" accepted. 
+2023-03-10 17:47:42.9276||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMP1GSLGENUK" started. 
+2023-03-10 17:47:42.9276||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMP1GSLGENUL" received FIN. 
+2023-03-10 17:47:42.9276||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMP1GSLGENUL" accepted. 
+2023-03-10 17:47:42.9276||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMP1GSLGENUL" started. 
+2023-03-10 17:47:42.9276||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMP1GSLGENUK" received FIN. 
+2023-03-10 17:47:42.9394||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMP1GSLGENUM" accepted. 
+2023-03-10 17:47:42.9394||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMP1GSLGENUM" started. 
+2023-03-10 17:47:42.9394||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-03-10 17:47:42.9394||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-03-10 17:47:42.9560||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMP1GSLGENUL" stopped. 
+2023-03-10 17:47:42.9560||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMP1GSLGENUK" stopped. 
+2023-03-10 17:47:42.9560||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMP1GSLGENUK" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2023-03-10 17:47:42.9560||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMP1GSLGENUL" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2023-03-10 17:47:42.9560||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMP1GSLGENUM established using the following protocol: Tls12 
+2023-03-10 17:47:42.9776||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending SETTINGS frame for stream ID 0 with length 18 and flags NONE. 
+2023-03-10 17:47:42.9776||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2023-03-10 17:47:42.9776||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" received SETTINGS frame for stream ID 0 with length 30 and flags NONE. 
+2023-03-10 17:47:42.9776||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2023-03-10 17:47:42.9776||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2023-03-10 17:47:42.9776||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" received HEADERS frame for stream ID 1 with length 591 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2023-03-10 17:47:42.9961||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" received SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2023-03-10 17:47:43.0029||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7027/swagger/index.html - - 
+2023-03-10 17:47:43.0202||DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2023-03-10 17:47:43.0202||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-03-10 17:47:43.0371||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html' 
+2023-03-10 17:47:43.0371||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2023-03-10 17:47:43.1650||DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection. 
+2023-03-10 17:47:43.1650||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending HEADERS frame for stream ID 1 with length 66 and flags END_HEADERS. 
+2023-03-10 17:47:43.2142||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 1 with length 1024 and flags NONE. 
+2023-03-10 17:47:43.2142||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 1 with length 1024 and flags NONE. 
+2023-03-10 17:47:43.2142||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 1 with length 1024 and flags NONE. 
+2023-03-10 17:47:43.2142||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 1 with length 1024 and flags NONE. 
+2023-03-10 17:47:43.2142||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 1 with length 991 and flags NONE. 
+2023-03-10 17:47:43.2142||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 1 with length 65 and flags NONE. 
+2023-03-10 17:47:43.2142||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 1 with length 16 and flags NONE. 
+2023-03-10 17:47:43.2217||DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection. 
+2023-03-10 17:47:43.2217||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 1 with length 0 and flags END_STREAM. 
+2023-03-10 17:47:43.2217||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7027/swagger/index.html - - - 200 - text/html;charset=utf-8 223.6738ms 
+2023-03-10 17:47:43.2217||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" received HEADERS frame for stream ID 3 with length 70 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2023-03-10 17:47:43.2217||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" received HEADERS frame for stream ID 5 with length 59 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2023-03-10 17:47:43.2217||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7027/_framework/aspnetcore-browser-refresh.js - - 
+2023-03-10 17:47:43.2217||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7027/_vs/browserLink - - 
+2023-03-10 17:47:43.2355||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending HEADERS frame for stream ID 3 with length 60 and flags END_HEADERS. 
+2023-03-10 17:47:43.2355||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 3 with length 11990 and flags NONE. 
+2023-03-10 17:47:43.2355||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 3 with length 0 and flags END_STREAM. 
+2023-03-10 17:47:43.2355||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7027/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 7.2271ms 
+2023-03-10 17:47:43.2355||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending HEADERS frame for stream ID 5 with length 149 and flags END_HEADERS. 
+2023-03-10 17:47:43.2355||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 9986 and flags NONE. 
+2023-03-10 17:47:43.2355||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2355||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2355||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2355||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2355||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2355||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2355||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2355||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2355||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2355||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2355||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2355||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2355||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2355||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2355||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2355||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2355||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2506||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2506||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2506||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2506||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2506||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2506||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2506||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2506||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2506||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2506||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2506||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2506||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2506||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2506||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2506||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2506||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2506||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2506||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2506||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2506||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2506||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2506||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2506||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2506||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2506||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2506||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2506||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2506||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2506||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2506||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2506||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2506||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2506||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2506||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2666||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2666||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2666||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2666||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2666||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2666||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2666||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2666||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2666||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2666||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2666||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2666||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2666||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2666||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2666||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2666||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2666||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2023-03-10 17:47:43.2666||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 6318 and flags NONE. 
+2023-03-10 17:47:43.2666||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 5 with length 0 and flags END_STREAM. 
+2023-03-10 17:47:43.2666||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7027/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 45.7227ms 
+2023-03-10 17:47:43.4236||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" received HEADERS frame for stream ID 7 with length 68 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2023-03-10 17:47:43.4236||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7027/swagger/v1/swagger.json - - 
+2023-03-10 17:47:43.4236||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-03-10 17:47:43.4236||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json' 
+2023-03-10 17:47:43.4236||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2023-03-10 17:47:43.4978||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending HEADERS frame for stream ID 7 with length 35 and flags END_HEADERS. 
+2023-03-10 17:47:43.4978||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 7 with length 7927 and flags NONE. 
+2023-03-10 17:47:43.5015||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending DATA frame for stream ID 7 with length 0 and flags END_STREAM. 
+2023-03-10 17:47:43.5015||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7027/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 77.6939ms 
+2023-03-10 17:48:01.8319||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMP1GSLGENUN" accepted. 
+2023-03-10 17:48:01.8319||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMP1GSLGENUN" started. 
+2023-03-10 17:48:01.8319||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMP1GSLGENUO" accepted. 
+2023-03-10 17:48:01.8319||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMP1GSLGENUN" received FIN. 
+2023-03-10 17:48:01.8319||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMP1GSLGENUO" started. 
+2023-03-10 17:48:01.8319||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-03-10 17:48:01.8319||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMP1GSLGENUN" stopped. 
+2023-03-10 17:48:01.8319||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMP1GSLGENUN" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2023-03-10 17:48:01.8319||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMP1GSLGENUO established using the following protocol: Tls12 
+2023-03-10 17:48:01.8319||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7027/api/account/login application/json 60 
+2023-03-10 17:48:01.8319||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-03-10 17:48:01.8464||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/account/login' 
+2023-03-10 17:48:01.8464||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'WebTalkApi.Controllers.AccountController.Login (WebTalkApi)' with route pattern 'api/Account/Login' is valid for the request path '/api/account/login' 
+2023-03-10 17:48:01.8464||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'WebTalkApi.Controllers.AccountController.Login (WebTalkApi)' 
+2023-03-10 17:48:01.8464||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2023-03-10 17:48:01.8781||DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated. 
+2023-03-10 17:48:01.8781||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebTalkApi.Controllers.AccountController.Login (WebTalkApi)' 
+2023-03-10 17:48:01.9012||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Login(WebTalkApi.Models.LoginUserDto) on controller WebTalkApi.Controllers.AccountController (WebTalkApi). 
+2023-03-10 17:48:01.9012||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2023-03-10 17:48:01.9012||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2023-03-10 17:48:01.9012||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2023-03-10 17:48:01.9012||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2023-03-10 17:48:01.9012||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2023-03-10 17:48:01.9012||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller WebTalkApi.Controllers.AccountController (WebTalkApi) 
+2023-03-10 17:48:01.9091||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller WebTalkApi.Controllers.AccountController (WebTalkApi) 
+2023-03-10 17:48:01.9091||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'loginDto' of type 'WebTalkApi.Models.LoginUserDto' ... 
+2023-03-10 17:48:01.9091||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'loginDto' of type 'WebTalkApi.Models.LoginUserDto' using the name '' in request data ... 
+2023-03-10 17:48:01.9091||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2023-03-10 17:48:01.9241||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMP1GSLGENUO", Request id "0HMP1GSLGENUO:00000002": started reading request body. 
+2023-03-10 17:48:01.9241||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMP1GSLGENUO", Request id "0HMP1GSLGENUO:00000002": done reading request body. 
+2023-03-10 17:48:01.9241||DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'WebTalkApi.Models.LoginUserDto' 
+2023-03-10 17:48:01.9385||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'loginDto' of type 'WebTalkApi.Models.LoginUserDto'. 
+2023-03-10 17:48:01.9385||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'loginDto' of type 'WebTalkApi.Models.LoginUserDto'. 
+2023-03-10 17:48:01.9385||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'loginDto' of type 'WebTalkApi.Models.LoginUserDto' ... 
+2023-03-10 17:48:01.9542||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'loginDto' of type 'WebTalkApi.Models.LoginUserDto'. 
+2023-03-10 17:48:01.9542||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-03-10 17:48:01.9542||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-03-10 17:48:01.9542||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-03-10 17:48:01.9542||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-03-10 17:48:01.9542||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method WebTalkApi.Controllers.AccountController.Login (WebTalkApi) - Validation state: Valid 
+2023-03-10 17:48:01.9542||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method WebTalkApi.Controllers.AccountController.Login (WebTalkApi) with arguments (WebTalkApi.Models.LoginUserDto) 
+2023-03-10 17:48:02.0571||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-03-10 17:48:02.0571||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-03-10 17:48:02.0571||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-03-10 17:48:02.0571||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-03-10 17:48:02.0571||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebTalkApi.Controllers.AccountController.Login (WebTalkApi) in 154.7961ms 
+2023-03-10 17:48:02.0630||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebTalkApi.Controllers.AccountController.Login (WebTalkApi)' 
+2023-03-10 17:48:02.0630||WARN|WebTalkApi.Middleware.ErrorHandlingMiddleware|Incorrect Email or Password WebTalkApi.Exceptions.BadRequestException: Incorrect Email or Password
+   at WebTalkApi.Services.AccountService.LoginUser(LoginUserDto loginDto) in Y:\CsProjects\WebTalkApi\Services\AccountService.cs:line 37
+   at WebTalkApi.Controllers.AccountController.Login(LoginUserDto loginDto) in Y:\CsProjects\WebTalkApi\Controllers\AccountController.cs:line 30
+   at lambda_method10(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at WebTalkApi.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in Y:\CsProjects\WebTalkApi\Middleware\ErrorHandlingMiddleware.cs:line 17
+2023-03-10 17:48:02.0836||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMP1GSLGENUO" completed keep alive response. 
+2023-03-10 17:48:02.0836||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7027/api/account/login application/json 60 - 400 - - 248.9138ms 
+2023-03-10 17:48:07.2288||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7027/api/account/login application/json 59 
+2023-03-10 17:48:07.2288||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-03-10 17:48:07.2288||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/account/login' 
+2023-03-10 17:48:07.2288||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'WebTalkApi.Controllers.AccountController.Login (WebTalkApi)' with route pattern 'api/Account/Login' is valid for the request path '/api/account/login' 
+2023-03-10 17:48:07.2288||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'WebTalkApi.Controllers.AccountController.Login (WebTalkApi)' 
+2023-03-10 17:48:07.2288||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2023-03-10 17:48:07.2288||DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated. 
+2023-03-10 17:48:07.2288||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebTalkApi.Controllers.AccountController.Login (WebTalkApi)' 
+2023-03-10 17:48:07.2288||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Login(WebTalkApi.Models.LoginUserDto) on controller WebTalkApi.Controllers.AccountController (WebTalkApi). 
+2023-03-10 17:48:07.2352||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2023-03-10 17:48:07.2352||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2023-03-10 17:48:07.2352||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2023-03-10 17:48:07.2352||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2023-03-10 17:48:07.2352||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2023-03-10 17:48:07.2352||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller WebTalkApi.Controllers.AccountController (WebTalkApi) 
+2023-03-10 17:48:07.2352||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller WebTalkApi.Controllers.AccountController (WebTalkApi) 
+2023-03-10 17:48:07.2352||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'loginDto' of type 'WebTalkApi.Models.LoginUserDto' ... 
+2023-03-10 17:48:07.2352||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'loginDto' of type 'WebTalkApi.Models.LoginUserDto' using the name '' in request data ... 
+2023-03-10 17:48:07.2352||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2023-03-10 17:48:07.2352||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMP1GSLGENUO", Request id "0HMP1GSLGENUO:00000003": started reading request body. 
+2023-03-10 17:48:07.2352||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMP1GSLGENUO", Request id "0HMP1GSLGENUO:00000003": done reading request body. 
+2023-03-10 17:48:07.2352||DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'WebTalkApi.Models.LoginUserDto' 
+2023-03-10 17:48:07.2352||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'loginDto' of type 'WebTalkApi.Models.LoginUserDto'. 
+2023-03-10 17:48:07.2352||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'loginDto' of type 'WebTalkApi.Models.LoginUserDto'. 
+2023-03-10 17:48:07.2352||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'loginDto' of type 'WebTalkApi.Models.LoginUserDto' ... 
+2023-03-10 17:48:07.2352||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'loginDto' of type 'WebTalkApi.Models.LoginUserDto'. 
+2023-03-10 17:48:07.2352||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-03-10 17:48:07.2352||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-03-10 17:48:07.2352||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-03-10 17:48:07.2352||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-03-10 17:48:07.2352||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method WebTalkApi.Controllers.AccountController.Login (WebTalkApi) - Validation state: Valid 
+2023-03-10 17:48:07.2352||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method WebTalkApi.Controllers.AccountController.Login (WebTalkApi) with arguments (WebTalkApi.Models.LoginUserDto) 
+2023-03-10 17:48:07.2987||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-03-10 17:48:07.2987||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-03-10 17:48:07.2987||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-03-10 17:48:07.2987||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-03-10 17:48:07.2987||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebTalkApi.Controllers.AccountController.Login (WebTalkApi) in 63.3228ms 
+2023-03-10 17:48:07.2987||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebTalkApi.Controllers.AccountController.Login (WebTalkApi)' 
+2023-03-10 17:48:07.2987||WARN|WebTalkApi.Middleware.ErrorHandlingMiddleware|Incorrect Email or Password WebTalkApi.Exceptions.BadRequestException: Incorrect Email or Password
+   at WebTalkApi.Services.AccountService.LoginUser(LoginUserDto loginDto) in Y:\CsProjects\WebTalkApi\Services\AccountService.cs:line 37
+   at WebTalkApi.Controllers.AccountController.Login(LoginUserDto loginDto) in Y:\CsProjects\WebTalkApi\Controllers\AccountController.cs:line 30
+   at lambda_method10(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at WebTalkApi.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in Y:\CsProjects\WebTalkApi\Middleware\ErrorHandlingMiddleware.cs:line 17
+2023-03-10 17:48:07.2987||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMP1GSLGENUO" completed keep alive response. 
+2023-03-10 17:48:07.2987||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7027/api/account/login application/json 59 - 400 - - 78.1744ms 
+2023-03-10 17:48:26.1235||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7027/api/account/login application/json 61 
+2023-03-10 17:48:26.1235||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-03-10 17:48:26.1235||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/account/login' 
+2023-03-10 17:48:26.1235||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'WebTalkApi.Controllers.AccountController.Login (WebTalkApi)' with route pattern 'api/Account/Login' is valid for the request path '/api/account/login' 
+2023-03-10 17:48:26.1257||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'WebTalkApi.Controllers.AccountController.Login (WebTalkApi)' 
+2023-03-10 17:48:26.1257||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2023-03-10 17:48:26.1257||DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated. 
+2023-03-10 17:48:26.1257||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebTalkApi.Controllers.AccountController.Login (WebTalkApi)' 
+2023-03-10 17:48:26.1257||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Login(WebTalkApi.Models.LoginUserDto) on controller WebTalkApi.Controllers.AccountController (WebTalkApi). 
+2023-03-10 17:48:26.1257||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2023-03-10 17:48:26.1257||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2023-03-10 17:48:26.1257||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2023-03-10 17:48:26.1257||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2023-03-10 17:48:26.1257||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2023-03-10 17:48:26.1257||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller WebTalkApi.Controllers.AccountController (WebTalkApi) 
+2023-03-10 17:48:26.1257||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller WebTalkApi.Controllers.AccountController (WebTalkApi) 
+2023-03-10 17:48:26.1257||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'loginDto' of type 'WebTalkApi.Models.LoginUserDto' ... 
+2023-03-10 17:48:26.1257||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'loginDto' of type 'WebTalkApi.Models.LoginUserDto' using the name '' in request data ... 
+2023-03-10 17:48:26.1257||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2023-03-10 17:48:26.1257||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMP1GSLGENUO", Request id "0HMP1GSLGENUO:00000004": started reading request body. 
+2023-03-10 17:48:26.1257||DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMP1GSLGENUO", Request id "0HMP1GSLGENUO:00000004": done reading request body. 
+2023-03-10 17:48:26.1257||DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'WebTalkApi.Models.LoginUserDto' 
+2023-03-10 17:48:26.1257||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'loginDto' of type 'WebTalkApi.Models.LoginUserDto'. 
+2023-03-10 17:48:26.1257||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'loginDto' of type 'WebTalkApi.Models.LoginUserDto'. 
+2023-03-10 17:48:26.1415||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'loginDto' of type 'WebTalkApi.Models.LoginUserDto' ... 
+2023-03-10 17:48:26.1415||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'loginDto' of type 'WebTalkApi.Models.LoginUserDto'. 
+2023-03-10 17:48:26.1415||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-03-10 17:48:26.1415||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-03-10 17:48:26.1415||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-03-10 17:48:26.1415||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-03-10 17:48:26.1415||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method WebTalkApi.Controllers.AccountController.Login (WebTalkApi) - Validation state: Valid 
+2023-03-10 17:48:26.1415||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method WebTalkApi.Controllers.AccountController.Login (WebTalkApi) with arguments (WebTalkApi.Models.LoginUserDto) 
+2023-03-10 17:48:26.2890||INFO|WebTalkApi.Services.AccountService|User Test2@emai.ff login succesfull 
+2023-03-10 17:48:26.2890||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method WebTalkApi.Controllers.AccountController.Login (WebTalkApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 137.8349ms. 
+2023-03-10 17:48:26.2890||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-03-10 17:48:26.2890||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-03-10 17:48:26.2890||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-03-10 17:48:26.2890||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-03-10 17:48:26.2890||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-03-10 17:48:26.2890||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-03-10 17:48:26.2890||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2023-03-10 17:48:26.2890||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2023-03-10 17:48:26.2983||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2023-03-10 17:48:26.2983||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2023-03-10 17:48:26.2983||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2023-03-10 17:48:26.2983||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response. 
+2023-03-10 17:48:26.2983||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.String'. 
+2023-03-10 17:48:26.2983||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2023-03-10 17:48:26.2983||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-03-10 17:48:26.2983||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-03-10 17:48:26.2983||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebTalkApi.Controllers.AccountController.Login (WebTalkApi) in 169.2751ms 
+2023-03-10 17:48:26.2983||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebTalkApi.Controllers.AccountController.Login (WebTalkApi)' 
+2023-03-10 17:48:26.2983||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMP1GSLGENUO" completed keep alive response. 
+2023-03-10 17:48:26.2983||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7027/api/account/login application/json 61 - 200 - text/plain;+charset=utf-8 181.9154ms 
+2023-03-10 17:49:54.6345||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" is closing. 
+2023-03-10 17:49:54.6345||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" is closed. The last processed stream ID was 7. 
+2023-03-10 17:49:54.6345||TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMP1GSLGENUM" sending GOAWAY frame for stream ID 0 with length 8 and flags 0x0. 
+2023-03-10 17:49:54.6345||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMP1GSLGENUM" received FIN. 
+2023-03-10 17:49:54.6345||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMP1GSLGENUM" sending FIN because: "The client closed the connection." 
+2023-03-10 17:49:54.6345||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMP1GSLGENUM" stopped. 
+2023-03-10 17:50:04.0123||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7027/api/chat - - 
+2023-03-10 17:50:04.0123||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-03-10 17:50:04.0123||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/chat' 
+2023-03-10 17:50:04.0123||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'WebTalkApi.Controllers.ChatController.ShowAllChats (WebTalkApi)' with route pattern 'api/chat' is valid for the request path '/api/chat' 
+2023-03-10 17:50:04.0123||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'WebTalkApi.Controllers.ChatController.ShowAllChats (WebTalkApi)' 
+2023-03-10 17:50:04.0123||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2023-03-10 17:50:04.0601||DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|Successfully validated the token. 
+2023-03-10 17:50:04.0601||DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was successfully authenticated. 
+2023-03-10 17:50:04.0637||DEBUG|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful. 
+2023-03-10 17:50:04.0637||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebTalkApi.Controllers.ChatController.ShowAllChats (WebTalkApi)' 
+2023-03-10 17:50:04.0637||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "ShowAllChats", controller = "Chat"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[WebTalkApi.Models.BaseChatDto]] ShowAllChats() on controller WebTalkApi.Controllers.ChatController (WebTalkApi). 
+2023-03-10 17:50:04.0637||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2023-03-10 17:50:04.0637||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2023-03-10 17:50:04.0637||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2023-03-10 17:50:04.0637||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2023-03-10 17:50:04.0637||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2023-03-10 17:50:04.0637||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller WebTalkApi.Controllers.ChatController (WebTalkApi) 
+2023-03-10 17:50:04.1400||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller WebTalkApi.Controllers.ChatController (WebTalkApi) 
+2023-03-10 17:50:04.1400||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-03-10 17:50:04.1400||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-03-10 17:50:04.1400||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-03-10 17:50:04.1408||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-03-10 17:50:04.1408||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method WebTalkApi.Controllers.ChatController.ShowAllChats (WebTalkApi) - Validation state: Valid 
+2023-03-10 17:50:04.1408||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method WebTalkApi.Controllers.ChatController.ShowAllChats (WebTalkApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.2775ms. 
+2023-03-10 17:50:04.1408||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-03-10 17:50:04.1408||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-03-10 17:50:04.1408||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-03-10 17:50:04.1408||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-03-10 17:50:04.1408||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-03-10 17:50:04.1408||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-03-10 17:50:04.1408||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2023-03-10 17:50:04.1408||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2023-03-10 17:50:04.1408||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2023-03-10 17:50:04.1408||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2023-03-10 17:50:04.1408||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2023-03-10 17:50:04.1408||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter' and content type '' to write the response. 
+2023-03-10 17:50:04.1408||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'null'. 
+2023-03-10 17:50:04.1408||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2023-03-10 17:50:04.1408||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-03-10 17:50:04.1408||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-03-10 17:50:04.1408||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebTalkApi.Controllers.ChatController.ShowAllChats (WebTalkApi) in 78.5104ms 
+2023-03-10 17:50:04.1408||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebTalkApi.Controllers.ChatController.ShowAllChats (WebTalkApi)' 
+2023-03-10 17:50:04.1408||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMP1GSLGENUO" completed keep alive response. 
+2023-03-10 17:50:04.1408||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7027/api/chat - - - 204 0 - 134.7407ms 
+2023-03-10 17:50:07.3782||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7027/api/chat - - 
+2023-03-10 17:50:07.3782||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-03-10 17:50:07.3782||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/chat' 
+2023-03-10 17:50:07.3782||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'WebTalkApi.Controllers.ChatController.ShowAllChats (WebTalkApi)' with route pattern 'api/chat' is valid for the request path '/api/chat' 
+2023-03-10 17:50:07.3782||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'WebTalkApi.Controllers.ChatController.ShowAllChats (WebTalkApi)' 
+2023-03-10 17:50:07.3782||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2023-03-10 17:50:07.3782||DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated. 
+2023-03-10 17:50:07.3782||INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user. 
+2023-03-10 17:50:07.3782||INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was challenged. 
+2023-03-10 17:50:07.3782||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMP1GSLGENUO" completed keep alive response. 
+2023-03-10 17:50:07.3782||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7027/api/chat - - - 401 0 - 8.3519ms 
+2023-03-10 17:50:10.5077||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7027/api/chat - - 
+2023-03-10 17:50:10.5077||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-03-10 17:50:10.5077||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/chat' 
+2023-03-10 17:50:10.5077||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'WebTalkApi.Controllers.ChatController.ShowAllChats (WebTalkApi)' with route pattern 'api/chat' is valid for the request path '/api/chat' 
+2023-03-10 17:50:10.5077||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'WebTalkApi.Controllers.ChatController.ShowAllChats (WebTalkApi)' 
+2023-03-10 17:50:10.5077||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2023-03-10 17:50:10.5077||DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|Successfully validated the token. 
+2023-03-10 17:50:10.5077||DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was successfully authenticated. 
+2023-03-10 17:50:10.5077||DEBUG|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful. 
+2023-03-10 17:50:10.5077||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebTalkApi.Controllers.ChatController.ShowAllChats (WebTalkApi)' 
+2023-03-10 17:50:10.5077||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "ShowAllChats", controller = "Chat"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[WebTalkApi.Models.BaseChatDto]] ShowAllChats() on controller WebTalkApi.Controllers.ChatController (WebTalkApi). 
+2023-03-10 17:50:10.5077||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2023-03-10 17:50:10.5077||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2023-03-10 17:50:10.5077||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2023-03-10 17:50:10.5077||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2023-03-10 17:50:10.5077||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2023-03-10 17:50:10.5077||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller WebTalkApi.Controllers.ChatController (WebTalkApi) 
+2023-03-10 17:50:10.5077||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller WebTalkApi.Controllers.ChatController (WebTalkApi) 
+2023-03-10 17:50:10.5077||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-03-10 17:50:10.5077||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-03-10 17:50:10.5077||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-03-10 17:50:10.5077||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-03-10 17:50:10.5077||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method WebTalkApi.Controllers.ChatController.ShowAllChats (WebTalkApi) - Validation state: Valid 
+2023-03-10 17:50:10.5077||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method WebTalkApi.Controllers.ChatController.ShowAllChats (WebTalkApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.0483ms. 
+2023-03-10 17:50:10.5077||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-03-10 17:50:10.5077||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2023-03-10 17:50:10.5077||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-03-10 17:50:10.5077||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-03-10 17:50:10.5077||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-03-10 17:50:10.5077||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-03-10 17:50:10.5077||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2023-03-10 17:50:10.5077||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2023-03-10 17:50:10.5077||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2023-03-10 17:50:10.5077||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2023-03-10 17:50:10.5159||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2023-03-10 17:50:10.5159||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter' and content type '' to write the response. 
+2023-03-10 17:50:10.5159||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'null'. 
+2023-03-10 17:50:10.5159||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2023-03-10 17:50:10.5159||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-03-10 17:50:10.5159||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-03-10 17:50:10.5159||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebTalkApi.Controllers.ChatController.ShowAllChats (WebTalkApi) in 4.4164ms 
+2023-03-10 17:50:10.5159||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebTalkApi.Controllers.ChatController.ShowAllChats (WebTalkApi)' 
+2023-03-10 17:50:10.5159||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMP1GSLGENUO" completed keep alive response. 
+2023-03-10 17:50:10.5159||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7027/api/chat - - - 204 0 - 9.8209ms 
+2023-03-10 17:50:16.7185||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7027/api/chat - 0 
+2023-03-10 17:50:16.7185||TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2023-03-10 17:50:16.7194||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/chat' 
+2023-03-10 17:50:16.7194||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'WebTalkApi.Controllers.ChatController.CreateChat (WebTalkApi)' with route pattern 'api/chat' is valid for the request path '/api/chat' 
+2023-03-10 17:50:16.7194||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'WebTalkApi.Controllers.ChatController.CreateChat (WebTalkApi)' 
+2023-03-10 17:50:16.7194||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2023-03-10 17:50:16.7194||DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|Successfully validated the token. 
+2023-03-10 17:50:16.7194||DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was successfully authenticated. 
+2023-03-10 17:50:16.7194||DEBUG|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization was successful. 
+2023-03-10 17:50:16.7194||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'WebTalkApi.Controllers.ChatController.CreateChat (WebTalkApi)' 
+2023-03-10 17:50:16.7194||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "CreateChat", controller = "Chat"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult CreateChat(WebTalkApi.Models.AddChatDto) on controller WebTalkApi.Controllers.ChatController (WebTalkApi). 
+2023-03-10 17:50:16.7194||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2023-03-10 17:50:16.7194||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2023-03-10 17:50:16.7194||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2023-03-10 17:50:16.7194||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2023-03-10 17:50:16.7194||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2023-03-10 17:50:16.7194||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller WebTalkApi.Controllers.ChatController (WebTalkApi) 
+2023-03-10 17:50:16.7194||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller WebTalkApi.Controllers.ChatController (WebTalkApi) 
+2023-03-10 17:50:16.7194||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'chatDto' of type 'WebTalkApi.Models.AddChatDto' ... 
+2023-03-10 17:50:16.7194||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'chatDto' of type 'WebTalkApi.Models.AddChatDto' using the name '' in request data ... 
+2023-03-10 17:50:16.7194||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type '(null)'. 
+2023-03-10 17:50:16.7194||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|No input formatter was found to support the content type '(null)' for use with the [FromBody] attribute. 
+2023-03-10 17:50:16.7194||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'chatDto' of type 'WebTalkApi.Models.AddChatDto'. 
+2023-03-10 17:50:16.7194||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'chatDto' of type 'WebTalkApi.Models.AddChatDto'. 
+2023-03-10 17:50:16.7194||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'chatDto' of type 'WebTalkApi.Models.AddChatDto' ... 
+2023-03-10 17:50:16.7194||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'chatDto' of type 'WebTalkApi.Models.AddChatDto'. 
+2023-03-10 17:50:16.7194||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-03-10 17:50:16.7194||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2023-03-10 17:50:16.7194||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter'. 
+2023-03-10 17:50:16.7194||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-03-10 17:50:16.7194||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter|Replacing Microsoft.AspNetCore.Mvc.UnsupportedMediaTypeResult with status code 415 with Microsoft.AspNetCore.Mvc.ObjectResult. 
+2023-03-10 17:50:16.7194||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-03-10 17:50:16.7194||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult. 
+2023-03-10 17:50:16.7194||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2023-03-10 17:50:16.7349||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2023-03-10 17:50:16.7349||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types 'application/problem+json, application/problem+xml, application/problem+json, application/problem+xml'. 
+2023-03-10 17:50:16.7349||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response. 
+2023-03-10 17:50:16.7349||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'. 
+2023-03-10 17:50:16.7349||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.ObjectResult. 
+2023-03-10 17:50:16.7349||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-03-10 17:50:16.7349||TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2023-03-10 17:50:16.7349||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action WebTalkApi.Controllers.ChatController.CreateChat (WebTalkApi) in 21.8737ms 
+2023-03-10 17:50:16.7349||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'WebTalkApi.Controllers.ChatController.CreateChat (WebTalkApi)' 
+2023-03-10 17:50:16.7349||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMP1GSLGENUO" completed keep alive response. 
+2023-03-10 17:50:16.7349||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7027/api/chat - 0 - 415 - application/problem+json;+charset=utf-8 28.5769ms 
+2023-03-10 17:50:37.3738||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMP1GSLGENUO" received FIN. 
+2023-03-10 17:50:37.3765||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMP1GSLGENUO" disconnecting. 
+2023-03-10 17:50:37.3765||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMP1GSLGENUO" stopped. 
+2023-03-10 17:50:37.3765||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMP1GSLGENUO" sending FIN because: "The Socket transport's send loop completed gracefully." 
