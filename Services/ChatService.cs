@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using WebTalkApi.Entities;
+using WebTalkApi.Exceptions;
 using WebTalkApi.Models;
 
 namespace WebTalkApi.Services
@@ -7,9 +9,11 @@ namespace WebTalkApi.Services
     public interface IChatService
     {
         public void CreateChat(AddChatDto chatDto);
+        public void AddUser(int chatId, int userId);
         public IEnumerable<BaseChatDto> GetAllChats();
 
         public void Send(SendMessageDto message, int chatId);
+
 
         public ChatDto Chat(int chatId);
 
@@ -26,6 +30,38 @@ namespace WebTalkApi.Services
             _userContext = userContext;
             _dbContext = dbcontext;
         }
+
+        public void AddUser(int chatId, int userId)
+        {
+            var chat = _dbContext
+                .Chats
+                .Include(c => c.Users)
+                .FirstOrDefault(c => c.Id == chatId);
+
+            if(chat is null)
+            {
+                throw new NotFoundException("Chat not found");
+            }
+
+            var user = _dbContext.Users.FirstOrDefault(u => u.Id == userId);
+
+            if(user is null)
+            {
+                throw new NotFoundException("User not found");
+            }
+
+            var userInChat = chat.Users.Any(u => u.Id == userId);
+
+            if (userInChat)
+            {
+                throw new BadRequestException("User is already added in chat");
+            }
+
+            chat.Users.Add(user);
+            _dbContext.SaveChanges();
+
+        }
+
         public ChatDto Chat(int chatId)
         {
             throw new NotImplementedException();

@@ -17,10 +17,17 @@ namespace WebTalkApi.Controllers
         }
 
         [HttpPost]
-        public ActionResult AddChat([FromBody] AddChatDto chatDto)
+        public ActionResult CreateNewChat([FromBody] AddChatDto chatDto)
         {
             _chatService.CreateChat(chatDto);
             return NoContent();
+        }
+        [HttpPost("{chatId}/user/{userId}")]
+        public ActionResult AddNewUserToChat([FromRoute]int chatId, [FromRoute] int userId)
+        {
+            _chatService.AddUser(chatId, userId);
+
+            return Ok();
         }
 
         [HttpGet]
