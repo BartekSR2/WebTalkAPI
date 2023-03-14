@@ -64,7 +64,35 @@ namespace WebTalkApi.Services
 
         public ChatDto GetChat(int chatId)
         {
-            throw new NotImplementedException();
+            var chat = _dbContext
+                .Chats
+                .Include(c => c.Messages)
+                .Include(u => u.Users)
+                .FirstOrDefault(c => c.Id == chatId);
+
+            if(chat is null)
+            {
+                throw new NotFoundException("Chat not found");
+            }
+
+            var userInChat = chat.Users.Any(u => u.Id == _userContext.UserId);
+            if (!userInChat)
+            {
+                throw new ForbidException("No chat access");
+            }
+
+            var messagesDto = _mapper.Map<List<MessageDto>>(chat.Messages);
+
+            var result = new ChatDto()
+            {
+                Id = chat.Id,
+                Name = chat.Name,
+                Messages = messagesDto
+
+            };
+
+            return result;
+
         }
 
         public void CreateChat(AddChatDto chatDto)

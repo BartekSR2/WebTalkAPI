@@ -47,8 +47,8 @@ namespace WebTalkApi.Controllers
         [HttpGet("{chatId}/message")]
         public ActionResult<ChatDto> ShowChat([FromRoute] int chatId)
         {
-
-            return null;
+            var result = _chatService.GetChat(chatId);
+            return result;
         }
 
 
