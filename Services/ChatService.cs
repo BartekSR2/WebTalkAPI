@@ -15,7 +15,7 @@ namespace WebTalkApi.Services
         public void Send(SendMessageDto message, int chatId);
 
 
-        public ChatDto Chat(int chatId);
+        public ChatDto GetChat(int chatId);
 
     }
     public class ChatService : IChatService
@@ -62,7 +62,7 @@ namespace WebTalkApi.Services
 
         }
 
-        public ChatDto Chat(int chatId)
+        public ChatDto GetChat(int chatId)
         {
             throw new NotImplementedException();
         }
@@ -91,7 +91,22 @@ namespace WebTalkApi.Services
 
         public IEnumerable<BaseChatDto> GetAllChats()
         {
-            throw new NotImplementedException();
+            var user = _dbContext
+                .Users
+                .Include(u => u.Chats)
+                .FirstOrDefault(u => u.Id == _userContext.UserId);
+
+            var userChats = user.Chats;
+
+            var result = _mapper.Map<List<BaseChatDto>>(userChats);
+            
+
+            return result;
+
+
+            
+
+
         }
 
         public void Send(SendMessageDto message, int chatId)

@@ -31,10 +31,10 @@ namespace WebTalkApi.Controllers
         }
 
         [HttpGet]
-        public ActionResult<IEnumerable<BaseChatDto>> ShowAllChats()
+        public ActionResult<IEnumerable<BaseChatDto>> ShowAccesibleChats()
         {
-
-            return Ok(null);
+            var result = _chatService.GetAllChats();
+            return Ok(result);
         }
 
         [HttpPost("{chatId}/message")]
