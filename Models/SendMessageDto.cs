@@ -6,6 +6,6 @@ namespace WebTalkApi.Models
     {
         [MaxLength(255)]
         [Required]
-        public int Content { get; set; }
+        public string Content { get; set; }
     }
 }

@@ -40,7 +40,7 @@ namespace WebTalkApi.Controllers
         [HttpPost("{chatId}/message")]
         public ActionResult SendMessage([FromBody] SendMessageDto messageDto, [FromRoute] int chatId)
         {
-
+            _chatService.Send(messageDto, chatId);
             return Ok();
         }
 

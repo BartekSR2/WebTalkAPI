@@ -111,7 +111,33 @@ namespace WebTalkApi.Services
 
         public void Send(SendMessageDto message, int chatId)
         {
-            throw new NotImplementedException();
+            var chat = _dbContext
+                .Chats
+                .Include(c => c.Users)
+                .Include(c => c.Messages)
+                .FirstOrDefault(c => c.Id == chatId);
+            if(chat is null)
+            {
+                throw new NotFoundException("Chat not found");
+            }
+            var userInChat = chat.Users.Any(u => u.Id == _userContext.UserId);
+
+            if (!userInChat)
+            {
+                throw new ForbidException("No chat access");
+            }
+
+            var messageToSend = new Message()
+            {
+                Content = message.Content,
+                SendDate = DateTime.Now,
+                UserId = (int)_userContext.UserId,
+            };
+
+            chat.Messages.Add(messageToSend);
+            _dbContext.SaveChanges();
+
+
         }
 
         

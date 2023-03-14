@@ -22,6 +22,18 @@ namespace WebTalkApi.Middleware
                 context.Response.StatusCode = 400;
                 await context.Response.WriteAsync(badRequest.Message);
             }
+            catch(NotFoundException notFound)
+            {
+                _logger.LogWarning(notFound, notFound.Message);
+                context.Response.StatusCode = 404;
+                await context.Response.WriteAsync(notFound.Message);
+            }
+            catch(ForbidException forbid)
+            {
+                _logger.LogWarning(forbid, forbid.Message);
+                context.Response.StatusCode = 403;
+                await context.Response.WriteAsync(forbid.Message);
+            }
             catch(Exception e)
             {
                 _logger.LogWarning(e, e.Message);
@@ -29,5 +41,7 @@ namespace WebTalkApi.Middleware
                 await context.Response.WriteAsync("Something went wrong");
             }
         }
+
+        
     }
 }
