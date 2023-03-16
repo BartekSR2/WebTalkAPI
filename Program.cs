@@ -11,6 +11,7 @@ using WebTalkApi.Services;
 using WebTalkApi.Validators;
 using NLog;
 using NLog.Web;
+using WebTalkApi.Exceptions;
 
 namespace WebTalkApi
 {
@@ -63,6 +64,7 @@ namespace WebTalkApi
             builder.Services.AddScoped<IJwtGenerator, JwtGenerator>();
             builder.Services.AddScoped<IUserContext, UserContext>();
             builder.Services.AddHttpContextAccessor();
+            builder.Services.AddScoped<IExceptionHandler, ExceptionHandler>();
                //database services
             builder.Services.AddScoped<IAccountService, AccountService>();
             builder.Services.AddScoped<IChatService, ChatService>();
