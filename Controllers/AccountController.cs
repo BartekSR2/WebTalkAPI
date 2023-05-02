@@ -31,5 +31,11 @@ namespace WebTalkApi.Controllers
 
             return Ok(token);
         }
+        [HttpGet("Find")]
+        public ActionResult<IEnumerable<UserDto>> Find([FromQuery] string userName, [FromQuery] string userSurname)
+        {
+            var results = _accountService.FindUser(userName, userSurname);
+            return Ok(results);
+        }
     }
 }

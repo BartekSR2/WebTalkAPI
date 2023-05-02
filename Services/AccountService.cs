@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -13,6 +14,7 @@ namespace WebTalkApi.Services
     {
         public void RegisterUser(RegisterUserDto registerDto);
         public string LoginUser(LoginUserDto  loginDto);
+        public IEnumerable<UserDto> FindUser(string name, string surname);
     }
     public class AccountService : IAccountService
     {
@@ -20,14 +22,37 @@ namespace WebTalkApi.Services
         private readonly IPasswordHasher<User> _passwordHasher;
         private readonly IJwtGenerator _jwtGenerator;
         private readonly ILogger<AccountService> _logger;
+        private readonly IMapper _mapper;
 
-        public AccountService(WebTalkDbContext dbContext,IPasswordHasher<User> passwordHasher,IJwtGenerator jwtGenerator, ILogger<AccountService> logger)
+        public AccountService(WebTalkDbContext dbContext,IPasswordHasher<User> passwordHasher,
+            IJwtGenerator jwtGenerator, ILogger<AccountService> logger, IMapper mapper)
         {
             _dbContext = dbContext;
             _passwordHasher = passwordHasher;
             _jwtGenerator = jwtGenerator;
             _logger = logger;
+            _mapper = mapper;
         }
+
+        public IEnumerable<UserDto> FindUser(string name, string surname)
+        {
+            
+            var users = _dbContext.Users
+                .Where(u =>
+                u.Name.ToLower().Contains(name.ToLower()) ||
+                u.Surname.ToLower().Contains(surname.ToLower()));
+
+            if(users is null)
+            {
+                throw new NotFoundException($"cant find any user {name} {surname}");
+            }
+
+            var findedUsers = _mapper.Map<List<UserDto>>(users);
+
+            return findedUsers;
+
+        }
+
         public string LoginUser(LoginUserDto loginDto)
         {
             var user = _dbContext.Users.FirstOrDefault(u => u.Email == loginDto.Email);

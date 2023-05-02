@@ -48,7 +48,7 @@ namespace WebTalkApi.Controllers
         public ActionResult<ChatDto> ShowChat([FromRoute] int chatId)
         {
             var result = _chatService.GetChat(chatId);
-            return result;
+            return Ok(result);
         }
 
 

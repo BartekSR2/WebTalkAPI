@@ -10,7 +10,8 @@ namespace WebTalkApi
         {
             CreateMap<Message, MessageDto>()
                 .ForMember(dto => dto.UserName, m => m.MapFrom(m => m.User.Name));
-            
+
+            CreateMap<User, UserDto>();
 
             CreateMap<Chat,BaseChatDto>();
         }
