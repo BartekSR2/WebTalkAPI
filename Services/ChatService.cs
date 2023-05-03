@@ -15,7 +15,7 @@ namespace WebTalkApi.Services
         public void Send(SendMessageDto message, int chatId);
 
 
-        public ChatDto GetChat(int chatId);
+        public ChatDto GetChat(int chatId, int ammountOfMessages);
 
     }
     public class ChatService : IChatService
@@ -62,11 +62,15 @@ namespace WebTalkApi.Services
 
         }
 
-        public ChatDto GetChat(int chatId)
+        public ChatDto GetChat(int chatId, int ammountOfMessages)
         {
+            if(ammountOfMessages < 0)
+            {
+                throw new BadRequestException("numer of messages  cant be smaller than 0");
+            }
             var chat = _dbContext
                 .Chats
-                .Include(c => c.Messages)
+                .Include(c => c.Messages.Take(ammountOfMessages))
                 .Include(u => u.Users)
                 .FirstOrDefault(c => c.Id == chatId);
 
