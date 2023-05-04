@@ -1,6 +1,0 @@
-2023-03-10 16:41:49.6231||INFO|WebTalkApi.Services.AccountService|User testemail2@em.pl login succesfull 
-2023-03-10 16:42:02.9685||WARN|WebTalkApi.Services.AccountService|User testemail2@em.pl login failed. Bad password 
-2023-03-10 17:11:14.1864||INFO|WebTalkApi.Services.AccountService|Create new user Test2@emai.ff, Testuser4 fajny 
-2023-03-10 17:11:59.3990||INFO|WebTalkApi.Services.AccountService|User Test2@emai.ff login succesfull 
-2023-03-10 17:12:29.2265||INFO|WebTalkApi.Services.AccountService|User Test2@emai.ff login succesfull 
-2023-03-10 17:48:26.2890||INFO|WebTalkApi.Services.AccountService|User Test2@emai.ff login succesfull 
