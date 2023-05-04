@@ -18,4 +18,5 @@ Any client application should be able to seamlessly connect to the Api and allow
 - adding user to te chat
 - showing user chats
 - sending messages
-A project created to consolidate knowledge and learning. 
+
+####A project created to consolidate knowledge and learning. 
