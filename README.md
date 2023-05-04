@@ -11,5 +11,11 @@ Any client application should be able to seamlessly connect to the Api and allow
 - c#
 - Asp.Net Core
 - Entity Framework
-
+### Possible operations
+- Login and Register
+- Searching users
+- creating chat
+- adding user to te chat
+- showing user chats
+- sending messages
 A project created to consolidate knowledge and learning. 
